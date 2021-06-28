@@ -28,4 +28,21 @@ getResponsibleNotification(){
 
 ```
 
+* Add un elemento en un array
+
+```
+setNotificacionOpportunityProject(): void{
+
+    let userNotifications: UserNotification[] = [];
+ 
+    this.project.responsiblesNotification.forEach(responsible=>{      
+        let userNotification: UserNotification = {};      
+        userNotification.instanceId=this.opportunity.instanceId;;
+        userNotification.isActive=true;
+        userNotification.notification=notification;
+        userNotification.applicationUser=applicationUser;
+        userNotifications.push(userNotification); 
+  });
+```
+
 
