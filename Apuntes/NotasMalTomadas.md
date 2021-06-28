@@ -30,7 +30,7 @@ getResponsibleNotification(){
 
 * Add un elemento en un array
 
-```
+```typescript
 setNotificacionOpportunityProject(): void{
 
     let userNotifications: UserNotification[] = [];
