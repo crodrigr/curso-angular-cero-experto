@@ -3,7 +3,7 @@ La intención de apartado es encotrar varios ejemplos practicos que puedan ser d
 
 * Interpolación en JavaScrit
 
-```
+```typescript
 console.log(`I'm ${age} years old!`)
 
 this.project.responsiblesNotification.forEach(responsible=>{
@@ -16,7 +16,7 @@ this.project.responsiblesNotification.forEach(responsible=>{
 
 * Crear un objeto de un interface para add arreglo objeto
 
-```
+```typescript
 getResponsibleNotification(){ 
    this.project.responsiblesNotification=[] ;
    this.responsibleNotifications.forEach(user=>{
