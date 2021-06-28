@@ -14,6 +14,21 @@ this.project.responsiblesNotification.forEach(responsible=>{
 
 ```
 
+* Crear un objeto de un interface para add arreglo objeto
+
+```
+getResponsibleNotification(){ 
+   this.project.responsiblesNotification=[] ;
+   this.responsibleNotifications.forEach(user=>{
+      let dato: ResponsibleNotification = {}; 
+      dato.responsibleUserId=user.id         
+      this.project.responsiblesNotification.push(dato); 
+   });   
+}
+
+```
+
+
 
 
 
