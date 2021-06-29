@@ -44,5 +44,10 @@ setNotificacionOpportunityProject(): void{
         userNotifications.push(userNotification); 
   });
 ```
+* Subscribe return null
 
+```
+  this.notificationService.newNotificationOpportunityProject(userNotifications,this.opportunity.instanceId).subscribe(
+       ()=>{},erro=>console.log(erro));
+```
 
