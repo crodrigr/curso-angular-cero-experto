@@ -46,7 +46,7 @@ setNotificacionOpportunityProject(): void{
 ```
 * Subscribe return null
 
-```
+```typescript
   this.notificationService.newNotificationOpportunityProject(userNotifications,this.opportunity.instanceId).subscribe(
        ()=>{},erro=>console.log(erro));
 ```
