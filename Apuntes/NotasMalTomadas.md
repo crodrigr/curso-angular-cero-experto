@@ -51,3 +51,14 @@ setNotificacionOpportunityProject(): void{
        ()=>{},erro=>console.log(erro));
 ```
 
+* Ejemplo de como validar con una expresión regular una url para que anteceda http, ftp, https
+```typescript
+  validLink(): boolean {
+    if(this.newLink.name == null || this.newLink.name == "") { return false; }
+    let regex = new RegExp(/^(ftp|http|https):\/\/[^ "]+$/)
+    if(!regex.test(this.newLink.urlLink)){ return false; }
+    if(this.newLink.urlLink == null || this.newLink.urlLink == "") { return false; }
+    return true;
+  }
+```
+
